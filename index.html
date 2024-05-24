@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stop watch</title>
+</head>
+<body>
+    <div class="main">
+        <h2>Stop Watch</h2>
+        <div class="content-box">
+            <div class="watch">
+                <div><span id="hours">00</span><small>HOURS</small> </div>
+                <div><span id="minutes">00</span><small>MINUTES</small> </div>
+                <div><span id="seconds">00</span><small>SECONDS</small> </div>
+            </div>
+            <div class="icons">
+                <div class="action">
+                    <img id="pause" onclick="stopClock()" src="assets/pause-svgrepo-com.svg" alt="pause">
+                    <img id="play" onclick="startTime()" src="assets/play-button-svgrepo-com.svg" alt="play">
+                </div>
+                <div id="reload">
+                    <img onclick="reloadClock()" src="assets/reload-svgrepo-com.svg" alt="">
+                </div>
+                    
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
